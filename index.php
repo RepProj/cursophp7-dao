@@ -12,8 +12,17 @@ require_once("config.php");
 //$search = Usuario::search("jo");
 //echo json_encode($search);
 
+//$usuario = new Usuario();
+//$usuario->login("root", "!1@#$");
+//echo $usuario;
+
+//$aluno = new Usuario("aluno", "@lun0");
+//$aluno->insert();
+//echo $aluno;
+
 $usuario = new Usuario();
-$usuario->login("root", "!1@#$");
+$usuario->loadById(8);
+$usuario->update("professor", "!@#$%¨&*");
 echo $usuario;
 
 ?>
